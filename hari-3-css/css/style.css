@@ -1,0 +1,104 @@
+
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+.teks-khusus {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+.teks-khusus {
+    color: red;
+}
+
+.kartu {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid blue;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #1f2937;
+    padding: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.kumpulan-kartu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.kartu-grid {
+    background-color: #e0f2fe;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;}
+@media (min-width: 768px)
+{
+    .kumpulan-kartu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .kumpulan-kartu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.grid-kartu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.kartu {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kartu:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .grid-kartu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.galeri img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: var(--radius);
+}

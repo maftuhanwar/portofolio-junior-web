@@ -13,23 +13,33 @@
 <p id="info"></p>
 <body>
     
+
 <section class="panel">
-    <h2>Editor Catatan</h2>
+    <h2>Tambah Antrean</h2>
+    <input
+        type="text"
+        id="nama"
+        placeholder="Masukkan nama pengunjung"
+    >
 
-    <textarea
-        id="editor"
-        rows="8"
-        placeholder="Tulis catatan di sini..."
-    ></textarea>
-
-    <div class="tombol-riwayat">
-        <button id="undo" disabled>Undo</button>
-        <button id="redo" disabled>Redo</button>
-    </div>
-
-    <p id="info">Riwayat: 0 undo, 0 redo</p>
+    <button id="tambah" type="button">
+        Ambil Nomor Antrean
+    </button>
 </section>
 
+<section class="panel">
+    <h2>Antrean Berikutnya</h2>
+    <p id="depan">Belum ada antrean.</p>
+    <button id="layani" type="button">Layani Antrean</button>
+</section>
+<section class="panel">
+    <h2>Daftar Antrean</h2>
+    <ul id="daftar"></ul>
+    <p id="jumlah">Jumlah antrean: 0</p>
+</section>
+<p id="pesan" role="status"></p>
+
+<script src="script.js"></script>
 <script type="module" src="riwayat.js"></script>
 
 </body>

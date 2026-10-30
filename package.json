@@ -1,0 +1,24 @@
+{
+  "name": "portofolio-junior-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maftuhanwar/portofolio-junior-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/maftuhanwar/portofolio-junior-web/issues"
+  },
+  "homepage": "https://github.com/maftuhanwar/portofolio-junior-web#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
